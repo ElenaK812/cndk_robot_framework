@@ -1,0 +1,815 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.9.4 on win32)" generated="20210520 17:53:45.627" rpa="false">
+<suite id="s1" name="CNDK test" source="C:\Users\kozlova\eclipse-workspace\CNDK_test">
+<suite id="s1-s1" name="CNDK Main" source="C:\Users\kozlova\eclipse-workspace\CNDK_test\CNDK_Main.robot">
+<test id="s1-s1-t1" name=" CNDK main page">
+<kw name="Log" library="BuiltIn" type="setup">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>This is test case setup</arg>
+</arguments>
+<msg timestamp="20210520 17:53:46.006" level="INFO">This is test case setup</msg>
+<status status="PASS" starttime="20210520 17:53:46.005" endtime="20210520 17:53:46.006"></status>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>http://cngroup.dk</arg>
+<arg>${list_browser}[1]</arg>
+</arguments>
+<msg timestamp="20210520 17:53:46.007" level="INFO">Opening browser 'chrome' to base url 'http://cngroup.dk'.</msg>
+<status status="PASS" starttime="20210520 17:53:46.006" endtime="20210520 17:53:55.590"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<status status="PASS" starttime="20210520 17:53:55.591" endtime="20210520 17:53:55.597"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>xpath: //a[@class='css-1r0mup5']</arg>
+</arguments>
+<status status="PASS" starttime="20210520 17:53:55.597" endtime="20210520 17:53:55.954"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://button[@class='css-177mhw3-Button']</arg>
+</arguments>
+<msg timestamp="20210520 17:53:55.956" level="INFO">Clicking element 'xpath://button[@class='css-177mhw3-Button']'.</msg>
+<status status="PASS" starttime="20210520 17:53:55.955" endtime="20210520 17:53:56.128"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<status status="PASS" starttime="20210520 17:53:56.128" endtime="20210520 17:53:56.133"></status>
+</kw>
+<kw name="Wait Until Element Contains" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<arguments>
+<arg>xpath://h2[@class='css-l5bejm-SectionHeading']</arg>
+<arg>Start your project with us</arg>
+</arguments>
+<status status="PASS" starttime="20210520 17:53:56.134" endtime="20210520 17:53:57.335"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210520 17:53:57.336" endtime="20210520 17:53:59.538"></status>
+</kw>
+<status status="PASS" starttime="20210520 17:53:46.004" endtime="20210520 17:53:59.538" critical="yes"></status>
+</test>
+<test id="s1-s1-t2" name="CNDK solutions dedicated team">
+<kw name="Log" library="BuiltIn" type="setup">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>This is test case setup</arg>
+</arguments>
+<msg timestamp="20210520 17:53:59.540" level="INFO">This is test case setup</msg>
+<status status="PASS" starttime="20210520 17:53:59.539" endtime="20210520 17:53:59.540"></status>
+</kw>
+<kw name="CNDKSolutionsTOPMenu">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>http://cngroup.dk</arg>
+<arg>${list_browser}[1]</arg>
+</arguments>
+<msg timestamp="20210520 17:53:59.541" level="INFO">Opening browser 'chrome' to base url 'http://cngroup.dk'.</msg>
+<status status="PASS" starttime="20210520 17:53:59.541" endtime="20210520 17:54:05.057"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210520 17:54:05.057" endtime="20210520 17:54:05.400"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20210520 17:54:05.400" endtime="20210520 17:54:05.404"></status>
+</kw>
+<kw name="Mouse Down On Link" library="SeleniumLibrary">
+<doc>Simulates a mouse down event on a link identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://a[@href='/solutions']</arg>
+</arguments>
+<status status="PASS" starttime="20210520 17:54:05.404" endtime="20210520 17:54:05.853"></status>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://a[@href='/solutions']</arg>
+</arguments>
+<msg timestamp="20210520 17:54:05.854" level="INFO">Clicking link 'xpath://a[@href='/solutions']'.</msg>
+<status status="PASS" starttime="20210520 17:54:05.853" endtime="20210520 17:54:05.994"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>2020 CN Group CZ a.s., All rights reserved.</arg>
+</arguments>
+<status status="PASS" starttime="20210520 17:54:05.994" endtime="20210520 17:54:06.021"></status>
+</kw>
+<status status="PASS" starttime="20210520 17:53:59.540" endtime="20210520 17:54:06.022"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<status status="PASS" starttime="20210520 17:54:06.023" endtime="20210520 17:54:06.026"></status>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://a[@href='/solutions/dedicated-teams']</arg>
+</arguments>
+<msg timestamp="20210520 17:54:06.027" level="INFO">Clicking link 'xpath://a[@href='/solutions/dedicated-teams']'.</msg>
+<status status="PASS" starttime="20210520 17:54:06.026" endtime="20210520 17:54:06.770"></status>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20210520 17:54:06.770" endtime="20210520 17:54:06.897"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210520 17:54:06.898" endtime="20210520 17:54:09.703"></status>
+</kw>
+<tags>
+<tag>solutions</tag>
+</tags>
+<status status="PASS" starttime="20210520 17:53:59.538" endtime="20210520 17:54:09.703" critical="yes"></status>
+</test>
+<test id="s1-s1-t3" name="CNDK solutions integrations-api">
+<kw name="Log" library="BuiltIn" type="setup">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>This is test case setup</arg>
+</arguments>
+<msg timestamp="20210520 17:54:09.709" level="INFO">This is test case setup</msg>
+<status status="PASS" starttime="20210520 17:54:09.707" endtime="20210520 17:54:09.709"></status>
+</kw>
+<kw name="CNDKSolutionsTOPMenu">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>http://cngroup.dk</arg>
+<arg>${list_browser}[1]</arg>
+</arguments>
+<msg timestamp="20210520 17:54:09.712" level="INFO">Opening browser 'chrome' to base url 'http://cngroup.dk'.</msg>
+<status status="PASS" starttime="20210520 17:54:09.711" endtime="20210520 17:54:15.372"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210520 17:54:15.372" endtime="20210520 17:54:15.686"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20210520 17:54:15.686" endtime="20210520 17:54:15.690"></status>
+</kw>
+<kw name="Mouse Down On Link" library="SeleniumLibrary">
+<doc>Simulates a mouse down event on a link identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://a[@href='/solutions']</arg>
+</arguments>
+<status status="PASS" starttime="20210520 17:54:15.691" endtime="20210520 17:54:16.156"></status>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://a[@href='/solutions']</arg>
+</arguments>
+<msg timestamp="20210520 17:54:16.157" level="INFO">Clicking link 'xpath://a[@href='/solutions']'.</msg>
+<status status="PASS" starttime="20210520 17:54:16.157" endtime="20210520 17:54:16.284"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>2020 CN Group CZ a.s., All rights reserved.</arg>
+</arguments>
+<status status="PASS" starttime="20210520 17:54:16.284" endtime="20210520 17:54:16.307"></status>
+</kw>
+<status status="PASS" starttime="20210520 17:54:09.710" endtime="20210520 17:54:16.307"></status>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://a[@href='/solutions/integrations-api']</arg>
+</arguments>
+<msg timestamp="20210520 17:54:16.308" level="INFO">Clicking link 'xpath://a[@href='/solutions/integrations-api']'.</msg>
+<status status="PASS" starttime="20210520 17:54:16.308" endtime="20210520 17:54:17.085"></status>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20210520 17:54:17.086" endtime="20210520 17:54:17.215"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210520 17:54:17.216" endtime="20210520 17:54:19.398"></status>
+</kw>
+<tags>
+<tag>solutions</tag>
+</tags>
+<status status="PASS" starttime="20210520 17:54:09.705" endtime="20210520 17:54:19.399" critical="yes"></status>
+</test>
+<test id="s1-s1-t4" name="CNDK Decision Workflow">
+<kw name="Log" library="BuiltIn" type="setup">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>This is test case setup</arg>
+</arguments>
+<msg timestamp="20210520 17:54:19.402" level="INFO">This is test case setup</msg>
+<status status="PASS" starttime="20210520 17:54:19.401" endtime="20210520 17:54:19.402"></status>
+</kw>
+<kw name="CNDKSolutionsTOPMenu">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>http://cngroup.dk</arg>
+<arg>${list_browser}[1]</arg>
+</arguments>
+<msg timestamp="20210520 17:54:19.404" level="INFO">Opening browser 'chrome' to base url 'http://cngroup.dk'.</msg>
+<status status="PASS" starttime="20210520 17:54:19.403" endtime="20210520 17:54:25.209"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210520 17:54:25.209" endtime="20210520 17:54:25.573"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20210520 17:54:25.573" endtime="20210520 17:54:25.577"></status>
+</kw>
+<kw name="Mouse Down On Link" library="SeleniumLibrary">
+<doc>Simulates a mouse down event on a link identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://a[@href='/solutions']</arg>
+</arguments>
+<status status="PASS" starttime="20210520 17:54:25.578" endtime="20210520 17:54:26.015"></status>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://a[@href='/solutions']</arg>
+</arguments>
+<msg timestamp="20210520 17:54:26.016" level="INFO">Clicking link 'xpath://a[@href='/solutions']'.</msg>
+<status status="PASS" starttime="20210520 17:54:26.015" endtime="20210520 17:54:26.150"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>2020 CN Group CZ a.s., All rights reserved.</arg>
+</arguments>
+<status status="PASS" starttime="20210520 17:54:26.151" endtime="20210520 17:54:26.172"></status>
+</kw>
+<status status="PASS" starttime="20210520 17:54:19.403" endtime="20210520 17:54:26.173"></status>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://a[@href='/solutions/decision-workflow']</arg>
+</arguments>
+<msg timestamp="20210520 17:54:26.174" level="INFO">Clicking link 'xpath://a[@href='/solutions/decision-workflow']'.</msg>
+<status status="PASS" starttime="20210520 17:54:26.173" endtime="20210520 17:54:27.156"></status>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20210520 17:54:27.157" endtime="20210520 17:54:27.273"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210520 17:54:27.274" endtime="20210520 17:54:29.450"></status>
+</kw>
+<tags>
+<tag>solutions</tag>
+</tags>
+<status status="PASS" starttime="20210520 17:54:19.400" endtime="20210520 17:54:29.451" critical="yes"></status>
+</test>
+<test id="s1-s1-t5" name="CNDK solutions dedicated team calculator">
+<kw name="Log" library="BuiltIn" type="setup">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>This is test case setup</arg>
+</arguments>
+<msg timestamp="20210520 17:54:29.456" level="INFO">This is test case setup</msg>
+<status status="PASS" starttime="20210520 17:54:29.454" endtime="20210520 17:54:29.456"></status>
+</kw>
+<kw name="CNDKSolutionsTOPMenu">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>http://cngroup.dk</arg>
+<arg>${list_browser}[1]</arg>
+</arguments>
+<msg timestamp="20210520 17:54:29.460" level="INFO">Opening browser 'chrome' to base url 'http://cngroup.dk'.</msg>
+<status status="PASS" starttime="20210520 17:54:29.459" endtime="20210520 17:54:36.058"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210520 17:54:36.059" endtime="20210520 17:54:36.392"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20210520 17:54:36.393" endtime="20210520 17:54:36.396"></status>
+</kw>
+<kw name="Mouse Down On Link" library="SeleniumLibrary">
+<doc>Simulates a mouse down event on a link identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://a[@href='/solutions']</arg>
+</arguments>
+<status status="PASS" starttime="20210520 17:54:36.397" endtime="20210520 17:54:36.849"></status>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://a[@href='/solutions']</arg>
+</arguments>
+<msg timestamp="20210520 17:54:36.850" level="INFO">Clicking link 'xpath://a[@href='/solutions']'.</msg>
+<status status="PASS" starttime="20210520 17:54:36.850" endtime="20210520 17:54:36.985"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>2020 CN Group CZ a.s., All rights reserved.</arg>
+</arguments>
+<status status="PASS" starttime="20210520 17:54:36.985" endtime="20210520 17:54:37.007"></status>
+</kw>
+<status status="PASS" starttime="20210520 17:54:29.457" endtime="20210520 17:54:37.008"></status>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://a[@href='/solutions/dedicated-teams']</arg>
+</arguments>
+<msg timestamp="20210520 17:54:37.010" level="INFO">Clicking link 'xpath://a[@href='/solutions/dedicated-teams']'.</msg>
+<status status="PASS" starttime="20210520 17:54:37.009" endtime="20210520 17:54:37.889"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20210520 17:54:37.889" endtime="20210520 17:54:37.897"></status>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://a[@href="https://www.cngroup.dk/services#b2b-calculator"]</arg>
+</arguments>
+<msg timestamp="20210520 17:54:37.899" level="INFO">Clicking link 'xpath://a[@href="https://www.cngroup.dk/services#b2b-calculator"]'.</msg>
+<status status="PASS" starttime="20210520 17:54:37.898" endtime="20210520 17:54:41.398"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>xpath://div[@class='css-q3or3u-Box']</arg>
+</arguments>
+<status status="PASS" starttime="20210520 17:54:41.398" endtime="20210520 17:54:41.807"></status>
+</kw>
+<kw name="ClearCalcForm">
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<arguments>
+<arg>${JunDevDict.locator}</arg>
+</arguments>
+<msg timestamp="20210520 17:54:41.809" level="INFO">Simulating Mouse Over on element 'xpath://input[@name='junior-developer_1_1583400856']'.</msg>
+<status status="PASS" starttime="20210520 17:54:41.808" endtime="20210520 17:54:42.114"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${JunDevDict.locator}</arg>
+</arguments>
+<msg timestamp="20210520 17:54:42.116" level="INFO">Clicking element 'xpath://input[@name='junior-developer_1_1583400856']'.</msg>
+<status status="PASS" starttime="20210520 17:54:42.115" endtime="20210520 17:54:42.249"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>${JunDevDict.locator}</arg>
+<arg>BACK_SPACE</arg>
+</arguments>
+<msg timestamp="20210520 17:54:42.251" level="INFO">Sending key(s) ('BACK_SPACE',) to xpath://input[@name='junior-developer_1_1583400856'] element.</msg>
+<msg timestamp="20210520 17:54:42.539" level="INFO">Pressing special key BACK_SPACE to element.</msg>
+<msg timestamp="20210520 17:54:42.539" level="INFO">Releasing special key BACK_SPACE.</msg>
+<status status="PASS" starttime="20210520 17:54:42.249" endtime="20210520 17:54:42.582"></status>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<arguments>
+<arg>${SenDevDict.locator}</arg>
+</arguments>
+<msg timestamp="20210520 17:54:42.583" level="INFO">Simulating Mouse Over on element 'xpath://input[@name='senior-developer_2_1583400856']'.</msg>
+<status status="PASS" starttime="20210520 17:54:42.582" endtime="20210520 17:54:42.894"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${SenDevDict.locator}</arg>
+</arguments>
+<msg timestamp="20210520 17:54:42.895" level="INFO">Clicking element 'xpath://input[@name='senior-developer_2_1583400856']'.</msg>
+<status status="PASS" starttime="20210520 17:54:42.894" endtime="20210520 17:54:43.003"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>${SenDevDict.locator}</arg>
+<arg>BACK_SPACE</arg>
+</arguments>
+<msg timestamp="20210520 17:54:43.004" level="INFO">Sending key(s) ('BACK_SPACE',) to xpath://input[@name='senior-developer_2_1583400856'] element.</msg>
+<msg timestamp="20210520 17:54:43.313" level="INFO">Pressing special key BACK_SPACE to element.</msg>
+<msg timestamp="20210520 17:54:43.313" level="INFO">Releasing special key BACK_SPACE.</msg>
+<status status="PASS" starttime="20210520 17:54:43.004" endtime="20210520 17:54:43.352"></status>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<arguments>
+<arg>${TesterDict.locator}</arg>
+</arguments>
+<msg timestamp="20210520 17:54:43.353" level="INFO">Simulating Mouse Over on element 'xpath://input[@name='tester_5_1583400913']'.</msg>
+<status status="PASS" starttime="20210520 17:54:43.352" endtime="20210520 17:54:43.662"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${TesterDict.locator}</arg>
+</arguments>
+<msg timestamp="20210520 17:54:43.665" level="INFO">Clicking element 'xpath://input[@name='tester_5_1583400913']'.</msg>
+<status status="PASS" starttime="20210520 17:54:43.663" endtime="20210520 17:54:43.759"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>${TesterDict.locator}</arg>
+<arg>BACK_SPACE</arg>
+</arguments>
+<msg timestamp="20210520 17:54:43.760" level="INFO">Sending key(s) ('BACK_SPACE',) to xpath://input[@name='tester_5_1583400913'] element.</msg>
+<msg timestamp="20210520 17:54:44.058" level="INFO">Pressing special key BACK_SPACE to element.</msg>
+<msg timestamp="20210520 17:54:44.058" level="INFO">Releasing special key BACK_SPACE.</msg>
+<status status="PASS" starttime="20210520 17:54:43.759" endtime="20210520 17:54:44.077"></status>
+</kw>
+<status status="PASS" starttime="20210520 17:54:41.807" endtime="20210520 17:54:44.078"></status>
+</kw>
+<kw name="CalcData">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${JunDevDict.locator}</arg>
+<arg>${JunDev}</arg>
+</arguments>
+<msg timestamp="20210520 17:54:44.079" level="INFO">Typing text '20' into text field 'xpath://input[@name='junior-developer_1_1583400856']'.</msg>
+<status status="PASS" starttime="20210520 17:54:44.078" endtime="20210520 17:54:44.202"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${SenDevDict.locator}</arg>
+<arg>${SenDevDict.value}</arg>
+</arguments>
+<msg timestamp="20210520 17:54:44.203" level="INFO">Typing text '30' into text field 'xpath://input[@name='senior-developer_2_1583400856']'.</msg>
+<status status="PASS" starttime="20210520 17:54:44.202" endtime="20210520 17:54:44.320"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${TesterDict.locator}</arg>
+<arg>${Tester}</arg>
+</arguments>
+<msg timestamp="20210520 17:54:44.321" level="INFO">Typing text '60' into text field 'xpath://input[@name='tester_5_1583400913']'.</msg>
+<status status="PASS" starttime="20210520 17:54:44.321" endtime="20210520 17:54:44.441"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://input[@id='name']</arg>
+<arg>Elena test</arg>
+</arguments>
+<msg timestamp="20210520 17:54:44.442" level="INFO">Typing text 'Elena test' into text field 'xpath://input[@id='name']'.</msg>
+<status status="PASS" starttime="20210520 17:54:44.441" endtime="20210520 17:54:44.680"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://input[@id='email']</arg>
+<arg>kozlova@cngroup.dk</arg>
+</arguments>
+<msg timestamp="20210520 17:54:44.681" level="INFO">Typing text 'kozlova@cngroup.dk' into text field 'xpath://input[@id='email']'.</msg>
+<status status="PASS" starttime="20210520 17:54:44.680" endtime="20210520 17:54:44.930"></status>
+</kw>
+<status status="PASS" starttime="20210520 17:54:44.078" endtime="20210520 17:54:44.930"></status>
+</kw>
+<kw name="Capture Element Screenshot" library="SeleniumLibrary">
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<arguments>
+<arg>xpath://div[@class='css-itw3oe-Box']</arg>
+</arguments>
+<msg timestamp="20210520 17:54:45.128" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-element-screenshot-1.png"&gt;&lt;img src="selenium-element-screenshot-1.png" width="400px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210520 17:54:44.931" endtime="20210520 17:54:45.129"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210520 17:54:45.129" endtime="20210520 17:54:47.351"></status>
+</kw>
+<tags>
+<tag>calc</tag>
+<tag>solutions</tag>
+</tags>
+<status status="PASS" starttime="20210520 17:54:29.453" endtime="20210520 17:54:47.351" critical="yes"></status>
+</test>
+<test id="s1-s1-t6" name="CNDK References">
+<kw name="Log" library="BuiltIn" type="setup">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>This is test case setup</arg>
+</arguments>
+<msg timestamp="20210520 17:54:47.357" level="INFO">This is test case setup</msg>
+<status status="PASS" starttime="20210520 17:54:47.355" endtime="20210520 17:54:47.357"></status>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>http://cngroup.dk</arg>
+<arg>${list_browser}[1]</arg>
+</arguments>
+<msg timestamp="20210520 17:54:47.359" level="INFO">Opening browser 'chrome' to base url 'http://cngroup.dk'.</msg>
+<status status="PASS" starttime="20210520 17:54:47.358" endtime="20210520 17:54:54.079"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<status status="PASS" starttime="20210520 17:54:54.080" endtime="20210520 17:54:54.084"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210520 17:54:54.084" endtime="20210520 17:54:54.497"></status>
+</kw>
+<kw name="Mouse Down On Link" library="SeleniumLibrary">
+<doc>Simulates a mouse down event on a link identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://a[@href='/solutions']</arg>
+</arguments>
+<status status="PASS" starttime="20210520 17:54:54.498" endtime="20210520 17:54:54.951"></status>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://a[@href='/references']</arg>
+</arguments>
+<msg timestamp="20210520 17:54:54.952" level="INFO">Clicking link 'xpath://a[@href='/references']'.</msg>
+<status status="PASS" starttime="20210520 17:54:54.951" endtime="20210520 17:54:55.256"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>Need expert advice from our consultants?</arg>
+</arguments>
+<status status="PASS" starttime="20210520 17:54:55.257" endtime="20210520 17:54:56.210"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://img[@src='/static/media/carousel-next-arrow.85558052.svg']</arg>
+</arguments>
+<msg timestamp="20210520 17:54:56.211" level="INFO">Clicking element 'xpath://img[@src='/static/media/carousel-next-arrow.85558052.svg']'.</msg>
+<status status="PASS" starttime="20210520 17:54:56.210" endtime="20210520 17:54:56.280"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<status status="PASS" starttime="20210520 17:54:56.281" endtime="20210520 17:54:56.284"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210520 17:54:56.284" endtime="20210520 17:54:58.463"></status>
+</kw>
+<tags>
+<tag>References</tag>
+</tags>
+<status status="PASS" starttime="20210520 17:54:47.353" endtime="20210520 17:54:58.463" critical="yes"></status>
+</test>
+<test id="s1-s1-t7" name="CNDK Contacts Button">
+<kw name="Log" library="BuiltIn" type="setup">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>This is test case setup</arg>
+</arguments>
+<msg timestamp="20210520 17:54:58.465" level="INFO">This is test case setup</msg>
+<status status="PASS" starttime="20210520 17:54:58.465" endtime="20210520 17:54:58.466"></status>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>http://cngroup.dk</arg>
+<arg>${list_browser}[1]</arg>
+</arguments>
+<msg timestamp="20210520 17:54:58.466" level="INFO">Opening browser 'chrome' to base url 'http://cngroup.dk'.</msg>
+<status status="PASS" starttime="20210520 17:54:58.466" endtime="20210520 17:55:04.003"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<status status="PASS" starttime="20210520 17:55:04.003" endtime="20210520 17:55:04.007"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>${Contact button}</arg>
+</arguments>
+<msg timestamp="20210520 17:55:04.008" level="INFO">Clicking button 'xpath: //button[@class='css-177mhw3-Button']'.</msg>
+<status status="PASS" starttime="20210520 17:55:04.008" endtime="20210520 17:55:04.186"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210520 17:55:04.187" endtime="20210520 17:55:07.952"></status>
+</kw>
+<tags>
+<tag>Contacts</tag>
+</tags>
+<status status="PASS" starttime="20210520 17:54:58.464" endtime="20210520 17:55:07.952" critical="yes"></status>
+</test>
+<test id="s1-s1-t8" name="CNDK About_arrow">
+<kw name="Log" library="BuiltIn" type="setup">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>This is test case setup</arg>
+</arguments>
+<msg timestamp="20210520 17:55:07.958" level="INFO">This is test case setup</msg>
+<status status="PASS" starttime="20210520 17:55:07.956" endtime="20210520 17:55:07.959"></status>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>http://cngroup.dk</arg>
+<arg>${list_browser}[1]</arg>
+</arguments>
+<msg timestamp="20210520 17:55:07.961" level="INFO">Opening browser 'chrome' to base url 'http://cngroup.dk'.</msg>
+<status status="PASS" starttime="20210520 17:55:07.960" endtime="20210520 17:55:13.965"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210520 17:55:13.966" endtime="20210520 17:55:14.277"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20210520 17:55:14.278" endtime="20210520 17:55:14.282"></status>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://a[@href='/about-us']</arg>
+</arguments>
+<msg timestamp="20210520 17:55:14.284" level="INFO">Clicking link 'xpath://a[@href='/about-us']'.</msg>
+<status status="PASS" starttime="20210520 17:55:14.283" endtime="20210520 17:55:14.598"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>xpath://div[@id='history']</arg>
+</arguments>
+<status status="PASS" starttime="20210520 17:55:14.598" endtime="20210520 17:55:15.584"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20210520 17:55:18.590" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210520 17:55:15.585" endtime="20210520 17:55:18.590"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//div[@class='css-1ft92b-Box']</arg>
+</arguments>
+<msg timestamp="20210520 17:55:18.592" level="INFO">Clicking element '//div[@class='css-1ft92b-Box']'.</msg>
+<status status="PASS" starttime="20210520 17:55:18.591" endtime="20210520 17:55:18.678"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20210520 17:55:21.693" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210520 17:55:18.679" endtime="20210520 17:55:21.694"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//div[@class='css-1ft92b-Box']</arg>
+</arguments>
+<msg timestamp="20210520 17:55:21.696" level="INFO">Clicking element '//div[@class='css-1ft92b-Box']'.</msg>
+<status status="PASS" starttime="20210520 17:55:21.694" endtime="20210520 17:55:21.776"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20210520 17:55:24.788" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210520 17:55:21.776" endtime="20210520 17:55:24.788"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//div[@class='css-1ft92b-Box']</arg>
+</arguments>
+<msg timestamp="20210520 17:55:24.789" level="INFO">Clicking element '//div[@class='css-1ft92b-Box']'.</msg>
+<status status="PASS" starttime="20210520 17:55:24.788" endtime="20210520 17:55:24.865"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20210520 17:55:27.872" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210520 17:55:24.865" endtime="20210520 17:55:27.874"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//div[@class='css-1ft92b-Box']</arg>
+</arguments>
+<msg timestamp="20210520 17:55:27.876" level="INFO">Clicking element '//div[@class='css-1ft92b-Box']'.</msg>
+<status status="PASS" starttime="20210520 17:55:27.875" endtime="20210520 17:55:27.950"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20210520 17:55:30.953" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210520 17:55:27.951" endtime="20210520 17:55:30.954"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>xpath://h1[@class='css-1ssm3tc-BreakWordText']</arg>
+</arguments>
+<status status="PASS" starttime="20210520 17:55:30.955" endtime="20210520 17:55:31.273"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20210520 17:55:34.283" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210520 17:55:31.274" endtime="20210520 17:55:34.284"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210520 17:55:34.285" endtime="20210520 17:55:36.530"></status>
+</kw>
+<tags>
+<tag>About_us</tag>
+<tag>Articles</tag>
+</tags>
+<status status="PASS" starttime="20210520 17:55:07.954" endtime="20210520 17:55:36.531" critical="yes"></status>
+</test>
+<doc>This is my demo project for Robot Frameworn, CNDK web site testing. Used in project: Variables,List Variables, Dictionary variables, Keywords, Tags, Test case setup/teardown. Location of elements by "xpath".</doc>
+<status status="PASS" starttime="20210520 17:53:45.707" endtime="20210520 17:55:36.535"></status>
+</suite>
+<status status="PASS" starttime="20210520 17:53:45.671" endtime="20210520 17:55:36.551"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="8" fail="0">Critical Tests</stat>
+<stat pass="8" fail="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0">About_us</stat>
+<stat pass="1" fail="0">Articles</stat>
+<stat pass="1" fail="0">calc</stat>
+<stat pass="1" fail="0">Contacts</stat>
+<stat pass="1" fail="0">References</stat>
+<stat pass="4" fail="0">solutions</stat>
+</tag>
+<suite>
+<stat pass="8" fail="0" id="s1" name="CNDK test">CNDK test</stat>
+<stat pass="8" fail="0" id="s1-s1" name="CNDK Main">CNDK test.CNDK Main</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
